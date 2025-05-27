@@ -3,43 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>mironovacolor.org — Page 404</title>
-  <link rel="stylesheet" href="used_style.css">
-  
-	  <style>
-	.lang-tabs input {
-	  display: none;
-	}
-
-	.lang-tabs label {
-	  display: inline-block;
-	  padding: 5px 10px;
-	  cursor: pointer;
-	  background: #ccc;
-	  border-radius: 5px 5px 0 0;
-	  margin-right: 5px;
-	  font-weight: normal;
-	  color: black;
-	}
-
-	.lang-tabs input:checked + label {
-	  background: #eee;
-	  font-weight: bold;
-	}
-
-	.lang-content {
-	  display: none;
-	  padding: 15px;
-	  background: #f9f9f9;
-	  border: 1px solid #ccc;
-	}
-
-	/* Show selected language */
-	#tab-ru:checked ~ #ru,
-	#tab-en:checked ~ #en {
-	  display: block;
-	}
-	</style>
-  
+  <link rel="stylesheet" href="used_style.css">  
 </head>
 
 <body>
@@ -50,35 +14,36 @@
 
   <input type="radio" id="tab-en" name="lang">
   <label for="tab-en">English</label>
+
+  <div class="lang-content" id="ru">
+    <h1>Страница 404</h1>
+    <h2>Запрошенная вами страница недоступна.</h2>
+    <h3>Пожалуйста воспользуйтесь ссылками приведенными ниже.</h3>
+    <ul>
+      <li><a href="../">На главную</a></li>
+      <li><a href="../theory/">Теория цвета</a></li>
+      <li><a href="../articles/">Статьи</a></li>
+      <li><a href="../practice/">Практические упражнения</a></li>
+      <li><a href="../examination/">Просмотры</a></li>
+      <li><a href="../structure/">Структура сайта</a></li>
+    </ul>
+  </div>
+
+  <div class="lang-content" id="en">
+    <h1>Page 404</h1>
+    <h2>The requested page is not available.</h2>
+    <h3>Please use the links below.</h3>
+    <ul>
+      <li><a href="../">Main Page</a></li>
+      <li><a href="../theory/">Color Theory</a></li>
+      <li><a href="../articles/">Articles</a></li>
+      <li><a href="../practice/">Practical Exercises</a></li>
+      <li><a href="../examination/">Examination</a></li>
+      <li><a href="../structure/">Site Map</a></li>
+    </ul>
+  </div>
 </div>
 
-<div class="lang-content" id="ru">
-  <h1>Страница 404</h1>
-  <h2>Запрошенная вами страница недоступна.</h2>
-  <h3>Пожалуйста воспользуйтесь ссылками приведенными ниже.</h3>
-  <ul>
-    <li><a href="../">На главную</a></li>
-    <li><a href="../theory/">Теория цвета</a></li>
-    <li><a href="../articles/">Статьи</a></li>
-    <li><a href="../practice/">Практические упражнения</a></li>
-    <li><a href="../examination/">Просмотры</a></li>
-    <li><a href="../structure/">Структура сайта</a></li>
-  </ul>
-</div>
-
-<div class="lang-content" id="en">
-  <h1>Page 404</h1>
-  <h2>The requested page is not available.</h2>
-  <h3>Please use the links below.</h3>
-  <ul>
-    <li><a href="../">Main Page</a></li>
-    <li><a href="../theory/">Color Theory</a></li>
-    <li><a href="../articles/">Articles</a></li>
-    <li><a href="../practice/">Practical Exercises</a></li>
-    <li><a href="../examination/">Examination</a></li>
-    <li><a href="../structure/">Site Map</a></li>
-  </ul>
-</div>
 
 <p class="smalltext">© 2004–2025 Миронова Ленина Николаевна, Иванов Дмитрий Григорьевич</p>
 
