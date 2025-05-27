@@ -3,140 +3,32 @@ body {
    background: #faf9f5;
 }
 
-.tablemargin{
-	margin-right: 25%;
-	margin-left: 20px;
+.lang-tabs { margin-bottom: 20px; }
+
+.lang-tabs input { display: none; }
+
+.lang-tabs label {
+  display: inline-block;
+  padding: 5px 10px;
+  cursor: pointer;
+  background: #ccc;
+  border-radius: 5px 5px 0 0;
+  margin-right: 5px;
 }
 
-
-hr{
-	height: 1px;
-	color: #000000;
-	border-style:none;
-	background-color:#000000;
-		margin-top:0.5em; margin-bottom:0; margin-right:0em;
+.lang-tabs input:checked + label {
+  background: #eee;
+  font-weight: bold;
 }
 
-
-h1{
-	font-family : Tahoma;
-	font-size: 150%;
-	margin-bottom: -1em;
-	font-weight: normal;
+.lang-content {
+  display: none;
+  padding: 15px;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
 }
 
-h2{
-	font-family : Arial, Helvetica, sans-serif;
-	padding-top: 1em;	
-		font-size: 130%;
-		font-weight: normal;
-}
-
-h3{
-	font-family : Arial, Helvetica, sans-serif;	
-		padding-top: 1em;
-		margin-bottom: -.5em;
-		font-size: 110%;
-		font-weight: normal;
-}
-
-h4{
-	font-family : Arial, Helvetica, sans-serif;	
-	padding-top: 1em;
-		font-size: 90%;
-		font-weight: normal;
-}
-a{
-		font-family: Arial, Helvetica, sans-serif;
-		color: #403f34;
-	font-size: 100%;
-}
-a:hover{
-	font-family: Arial, Helvetica, sans-serif;
-	color: #ed1c24;
-	font-size: 100%;
-}
-
-a:visited{
-	font-family: Arial, Helvetica, sans-serif;
-	color: #a54686;
-	font-size: 100%;
-}
-
-.noa{
-	font-family: Arial, Helvetica, sans-serif;
-	color: #ff0000;
-	font-weight: bold;
-	text-decoration: none;
-	cursor: default;
-	font-size: 100%;
-}
-
-.maintext{
-	font-family: "Times New Roman", Times, serif;
-	font-size: 1.5em;
-	text-align: left;
-}
-
-.smalltext{
-	font-family: "Times New Roman", Times, serif;
-	font-size: 85%;
-}
-
-img {
-border-color: #FFFFFF;
-}
-
-.italic {
-	font-style: italic;
-	font-family: "Times New Roman", Times, serif;
-	font-size: 1.5em;
-	text-align: left;
-}
-
-.blackborder{
-border-color: #000;
-border-width: 1px;
-border-style: solid;
-}
-
-.question_back{
-	background-color: #F5F5F5;
-	padding: 10 10 10 10;
-}
-
-#structure a{
-	background-image: url(structure.gif);
-	background-repeat: no-repeat;
-	width: 16px;
-	height: 16px;
-	margin-right: 20px;
-	text-decoration: none;
-}
-
-#structure a:hover{
-	background-image: url(structure_hover.gif);
-	background-repeat: no-repeat;
-	width: 16px;
-	height: 16px;
-	margin-right: 20px;
-	text-decoration: none;
-}
-
-dd{
-	line-height:130%;
-}
-
-dl{
-	font-size: 1.5em;
-}
-
-ol{
-	line-height:130%;
-	font-size: 1.5em;
-}
-
-ul{
-	line-height:130%;
-		font-size: 1.5em;
+#tab-ru:checked ~ #ru,
+#tab-en:checked ~ #en {
+  display: block;
 }
