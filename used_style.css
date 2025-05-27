@@ -28,12 +28,12 @@ body{
 
 .lang-content {
   display: none;
-  padding: 15px;
-  border: 1px solid #ccc;
-  background: #f9f9f9;
 }
 
-#tab-ru:checked ~ #ru,
+#tab-ru:checked ~ #ru {
+  display: block;
+}
+
 #tab-en:checked ~ #en {
   display: block;
 }
