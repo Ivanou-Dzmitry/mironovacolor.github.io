@@ -2,6 +2,51 @@ body{
    background: #faf9f5;
 }
 
+h1 {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 150%;
+  margin-bottom: -1em;
+  font-weight: 600;
+}
+
+h2 {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  padding-top: 1em;
+  font-size: 130%;
+  font-weight: 500;
+}
+
+h3 {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  padding-top: 1em;
+  margin-bottom: -.5em;
+  font-size: 110%;
+  font-weight: 500;
+}
+
+h4 {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  padding-top: 1em;
+  font-size: 95%;
+  font-weight: 500;
+}
+
+a {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #403f34;
+  font-size: 100%;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ed1c24;
+}
+
+a:visited {
+  color: #a54686;
+}
+
+
 .lang-tabs { margin-bottom: 20px; }
 
 .lang-tabs label {
