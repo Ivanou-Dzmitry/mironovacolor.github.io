@@ -46,6 +46,21 @@ a:visited {
   color: #a54686;
 }
 
+.maintext {
+  font-family: "Inter", "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.125em; /* slightly smaller for better reading comfort */
+  line-height: 1.6;
+  text-align: left;
+  color: #222; /* slightly softer than pure black */
+}
+
+.smalltext {
+  font-family: "Inter", "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.875em;
+  line-height: 1.4;
+  color: #555;
+}
+
 
 .lang-tabs { margin-bottom: 20px; }
 
