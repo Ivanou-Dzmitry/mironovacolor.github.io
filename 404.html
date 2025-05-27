@@ -4,6 +4,42 @@
   <meta charset="UTF-8">
   <title>mironovacolor.org — Page 404</title>
   <link rel="stylesheet" href="used_style.css">
+  
+	  <style>
+	.lang-tabs input {
+	  display: none;
+	}
+
+	.lang-tabs label {
+	  display: inline-block;
+	  padding: 5px 10px;
+	  cursor: pointer;
+	  background: #ccc;
+	  border-radius: 5px 5px 0 0;
+	  margin-right: 5px;
+	  font-weight: normal;
+	  color: black;
+	}
+
+	.lang-tabs input:checked + label {
+	  background: #eee;
+	  font-weight: bold;
+	}
+
+	.lang-content {
+	  display: none;
+	  padding: 15px;
+	  background: #f9f9f9;
+	  border: 1px solid #ccc;
+	}
+
+	/* Show selected language */
+	#tab-ru:checked ~ #ru,
+	#tab-en:checked ~ #en {
+	  display: block;
+	}
+	</style>
+  
 </head>
 
 <body>
