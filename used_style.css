@@ -1,5 +1,10 @@
+/* 2025 */
 body{
    background: #faf9f5;
+   margin: 0;
+	display: flex;
+	min-height: 100vh;
+  flex-direction: column;
 }
 
 h1 {
@@ -32,26 +37,29 @@ h4 {
 }
 
 a {
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  color: #403f34;
-  font-size: 100%;
+  font-family: "Inter", "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  color: #0066cc; /* modern readable blue */
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 a:hover {
-  color: #ed1c24;
+  color: #cc0000; /* a soft red for hover */
 }
 
 a:visited {
-  color: #a54686;
+  color: #663399; /* a purple tone that's readable and distinct */
 }
 
 .maintext {
   font-family: "Inter", "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
-  font-size: 1.125em; /* slightly smaller for better reading comfort */
+  font-size: var(--main-font-size);
   line-height: 1.6;
   text-align: left;
-  color: #222; /* slightly softer than pure black */
+	color: var(--color-text-main);
+  max-width: 60ch; /* limits line length to ~60 characters */
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 .smalltext {
@@ -59,6 +67,7 @@ a:visited {
   font-size: 0.875em;
   line-height: 1.4;
   color: #555;
+  max-width: 60ch; /* limits line length to ~60 characters */
 }
 
 
@@ -96,4 +105,170 @@ a:visited {
 
 #tab-en:checked ~ #en {
   display: block;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-size);
+}
+
+header h1, header h4 {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  gap: var(--gap-size);
+  padding-top: 1em;
+}
+
+/* Menu styling */
+.menu {
+  flex: 0 0 25%; /* fixed width for menu */
+  max-width: 25%;
+}
+
+.site_logo{
+	width: 25%;
+	max-width: 25%;
+}
+
+/* MENU */
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+	  font-family: "Inter", "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  margin-bottom: 0.5em;
+font-size: var(--main-font-size);
+  color: var(--color-text-main);
+}
+
+/* Main content area */
+.content {
+  flex: 1;
+  text-align: left;       /* ensures text is left-aligned */
+  max-width: 100%;        /* prevents overflow */
+  box-sizing: border-box; /* ensures padding doesn't increase width */
+  margin-top: 0;
+}
+
+footer {
+  text-align: left;
+  border-top: 1px solid #ccc; /* light gray line; adjust color if needed */
+  padding-top: 1em; /* optional spacing above footer content */
+  margin-top: 2em;  /* optional spacing between content and footer */
+}
+
+.site-wrapper {
+  padding-left: 2rem;  /* controls indent from left */
+  padding-top: 1rem;
+  max-width: 75%;   /* optional: limit total width */
+  text-align: left;
+}
+
+.wrapper {
+  display: flex;
+  flex-grow: 1; /* let wrapper grow vertically */
+  gap: var(--gap-size, 1.5em);
+  box-sizing: border-box;
+  margin-top: 0;
+  flex: 1; /* takes remaining width */
+}
+
+nav.menu {
+  flex: 0 0 25%; /* fixed width menu */
+  background-color: var(--color-back-main);
+  overflow-y: auto; /* scroll if content too tall */
+}
+
+main.content {
+  flex: 1 1 auto; /* flexible, fills remaining space */
+  min-width: 0; /* prevents content overflow */
+  background-color: var(--color-back-main);
+  overflow-wrap: break-word; /* better line breaks */
+}
+
+/* Optional: responsive tweak for narrow screens */
+@media (max-width: 600px) {
+  .wrapper {
+    flex-direction: column;
+  }
+  
+  nav.menu {
+    flex: none;
+    width: 100%;
+    order: 2;
+  }
+
+  main.content {
+    order: 1;
+    width: 100%;
+  }
+}
+
+dd{
+	line-height:130%;
+}
+
+dl{
+	color: var(--color-text-main);
+	margin-top: 0;
+}
+
+.paragraph1 {
+  font-family: "Inter", "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-size: var(--main-font-size);
+  line-height: 1.6;
+  color: var(--color-text-main);
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  margin-left: 0;
+}
+
+.paragraph2 {
+  font-family: "Inter", "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-size: var(--main-font-size);
+  line-height: 1.6;
+  color: var(--color-text-main);
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 2rem;
+}
+
+.paragraph3 {
+  font-family: "Inter", "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-size: var(--main-font-size);
+  line-height: 1.6;
+  color: var(--color-text-main);
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  margin-left: 4rem;
+}
+
+.breadcrumbs {
+	font-family: "Inter", "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-size: calc(var(--main-font-size)-30%);
+  color: var(--color-text-main);
+  text-align: left;
+  padding-left: calc(25% + var(--gap-size));
+  border-bottom: 1px solid #ccc; /* light gray line; adjust color if needed */
+  padding-bottom: 0.5rem;
+}
+
+li{
+
+font-size: var(--main-font-size);
+  color: var(--color-text-main);
+}
+
+:root {
+  --gap-size: 2em;
+  --color-back-main: #faf9f5;
+  --color-text-main: #222;
+  --main-font-size: 1.125em;
 }
