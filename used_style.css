@@ -96,43 +96,6 @@ a:visited {
   max-width: 60ch; /* limits line length to ~60 characters */
 }
 
-
-.lang-tabs { margin-bottom: 20px; }
-
-.lang-tabs label {
-  color: black;
-  font-size: 16px;
-}
-
-
-.lang-tabs input { display: none; }
-
-.lang-tabs label {
-  display: inline-block;
-  padding: 5px 10px;
-  cursor: pointer;
-  background: #ccc;
-  border-radius: 5px 5px 0 0;
-  margin-right: 5px;
-}
-
-.lang-tabs input:checked + label {
-  background: #eee;
-  font-weight: bold;
-}
-
-.lang-content {
-  display: none;
-}
-
-#tab-ru:checked ~ #ru {
-  display: block;
-}
-
-#tab-en:checked ~ #en {
-  display: block;
-}
-
 header {
   display: flex;
   align-items: center;
@@ -281,6 +244,12 @@ dl{
   padding-left: calc(25% + var(--gap-size));
   border-bottom: 1px solid #ccc; /* light gray line; adjust color if needed */
   padding-bottom: 0.5rem;
+}
+
+p{
+	font-family: "Inter", "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+	color: var(--color-text-main);
+	font-size: var(--main-font-size);
 }
 
 li {
