@@ -264,6 +264,57 @@ ul.maintext {
   margin-left: -1em;
 }
 
+.blackborder{
+border-color: #000;
+border-width: 1px;
+border-style: solid;
+width: 100%;
+border-collapse: collapse;
+margin-bottom: var(--gap-size); 
+}
+
+  tr, td {
+    border: 1px solid black;
+  }
+  
+    img {
+    border: none;
+	margin-bottom: 1em; 
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .gallery-item {
+    width: calc(33.333% - 20px); /* 3 per row */
+    text-align: left; /* Align text to the left */
+  }
+  .gallery-item img {
+    max-width: 100%;
+    height: auto;
+    border: none;
+    display: block; /* Ensures no inline gap with text */
+  }
+  
+.caption {
+	font-family: "Inter", "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+	color: var(--color-text-main);
+	font-size: var(--main-font-size);	
+  margin-top: 2px; /* small margin to image */
+  line-height: 1.1;
+  margin-bottom: var(--gap-size);
+    font-style: italic;
+}
+
+
+hr {
+  border: none;
+  border-top: 1px solid black;
+  margin: 1em 0; /* Optional: adds vertical spacing */
+}
+
 :root {
   --gap-size: 2em;
   --color-back-main: #faf9f5;
