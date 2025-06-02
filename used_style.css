@@ -61,6 +61,11 @@ a:visited {
   margin-top: 0;
   margin-bottom: 1rem;
   margin-left: 0;
+  padding-right: var(--gap-size);
+}
+
+* {
+  font-family: inherit;
 }
 
 .italic {
@@ -74,6 +79,7 @@ a:visited {
   margin-bottom: 1rem;
   margin-left: 0;
   font-style: italic;
+  padding-right: var(--gap-size);
 }
 
 .italic-right {
@@ -86,6 +92,7 @@ a:visited {
   margin: 0rem 0 1rem auto;
   padding-top: 1em;padding-bottom: 1em;
   font-style: italic;
+  padding-right: var(--gap-size);
 }
 
 .smalltext {
@@ -94,6 +101,7 @@ a:visited {
   line-height: 1.4;
   color: #555;
   max-width: 60ch; /* limits line length to ~60 characters */
+  padding-right: var(--gap-size);
 }
 
 header {
@@ -156,7 +164,7 @@ footer {
 .site-wrapper {
   padding-left: 2rem;  /* controls indent from left */
   padding-top: 1rem;
-  max-width: 75%;   /* optional: limit total width */
+  max-width: 90%;   /* optional: limit total width */
   text-align: left;
 }
 
