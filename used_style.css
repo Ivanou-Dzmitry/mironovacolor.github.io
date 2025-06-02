@@ -164,7 +164,7 @@ footer {
 .site-wrapper {
   padding-left: 2rem;  /* controls indent from left */
   padding-top: 1rem;
-  max-width: 90%;   /* optional: limit total width */
+  max-width: 150ch;   /* optional: limit total width */
   text-align: left;
 }
 
