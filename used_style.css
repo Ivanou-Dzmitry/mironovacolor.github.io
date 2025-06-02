@@ -249,7 +249,7 @@ dl{
   font-size: var(--main-font-size);
   color: #777;
   text-align: left;
-  padding-left: 24ch;
+  padding-left: 30ch;
   border-bottom: 1px solid #ccc; /* light gray line; adjust color if needed */
   padding-bottom: 0.5rem;
 }
