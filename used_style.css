@@ -7,22 +7,28 @@ body{
   flex-direction: column;
 }
 
+@media (min-resolution: 2dppx) and (max-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+}
+
 h1 {
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: var(--font-main);
   font-size: 2rem;
   margin-bottom: -1em;
   font-weight: 600;
 }
 
 h2 {
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: var(--font-main);
   padding-top: 1em;
   font-size: 1.8rem;
   font-weight: 500;
 }
 
 h3 {
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;  
+  font-family: var(--font-main);
   margin-bottom: 1em;
   font-size: 1.5rem;
   font-weight: 500;
@@ -30,14 +36,14 @@ h3 {
 }
 
 h4 {
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: var(--font-main);
   margin-bottom: 1em;
   font-size: 1.2rem;
   font-weight: 500;
 }
 
 a {
-  font-family: "Inter", "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-family: var(--font-main);
   color: #0066cc; /* modern readable blue */
   text-decoration: none;
   transition: color 0.2s ease;
@@ -52,7 +58,7 @@ a:visited {
 }
 
 .maintext {
-  font-family: "Inter", "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-family: var(--font-main);
   font-size: var(--main-font-size);
   line-height: 1.6;
   text-align: left;
@@ -69,7 +75,7 @@ a:visited {
 }
 
 .italic {
-  font-family: "Inter", "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-family: var(--font-main);
   font-size: var(--main-font-size);
   line-height: 1.6;
   text-align: left;
@@ -83,7 +89,7 @@ a:visited {
 }
 
 .italic-right {
-  font-family: "Inter", "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-family: var(--font-main);
   font-size: var(--main-font-size);
   line-height: 1.6em;
   text-align: right;
@@ -96,7 +102,7 @@ a:visited {
 }
 
 .smalltext {
-  font-family: "Inter", "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-family: var(--font-main);
   font-size: 0.875em;
   line-height: 1.4;
   color: #555;
@@ -139,7 +145,7 @@ header h1, header h4 {
 }
 
 .menu li {
-	  font-family: "Inter", "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+	  font-family: var(--font-main);
   margin-bottom: 0.5em;
 font-size: var(--main-font-size);
   color: var(--color-text-main);
@@ -218,7 +224,7 @@ dl{
 }
 
 .paragraph1 {
-  font-family: "Inter", "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-family: var(--font-main);
   line-height: 1.6;
   color: var(--color-text-main);
   margin-top: 0;
@@ -227,7 +233,7 @@ dl{
 }
 
 .paragraph2 {
-  font-family: "Inter", "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-family: var(--font-main);
   line-height: 1.6;
   color: var(--color-text-main);
   margin-top: 0.5rem;
@@ -236,7 +242,7 @@ dl{
 }
 
 .paragraph3 {
-  font-family: "Inter", "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-family: var(--font-main);
   line-height: 1.6;
   color: var(--color-text-main);
   margin-top: 0;
@@ -245,7 +251,7 @@ dl{
 }
 
 .breadcrumbs {
-	font-family: "Inter", "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+	font-family: var(--font-main);
   font-size: var(--main-font-size);
   color: #777;
   text-align: left;
@@ -263,7 +269,7 @@ dl{
 }
 
 p{
-	font-family: "Inter", "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+	font-family: var(--font-main);
 	color: var(--color-text-main);
 	font-size: var(--main-font-size);
 }
@@ -293,9 +299,8 @@ margin-bottom: var(--gap-size);
     border: 1px solid black;
   }
   
-    img {
+  img {
     border: none;
-	margin-bottom: 1em; 
 	max-width: 80ch;
   }
   
@@ -316,13 +321,12 @@ margin-bottom: var(--gap-size);
   }
   
 .caption {
-	font-family: "Inter", "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+	font-family: var(--font-main);
 	color: var(--color-text-main);
 	font-size: var(--main-font-size);	
-  margin-top: 2px; /* small margin to image */
   line-height: 1.1;
   margin-bottom: var(--gap-size);
-    font-style: italic;
+  font-style: italic;
 }
 
 
@@ -336,5 +340,6 @@ hr {
   --gap-size: 2em;
   --color-back-main: #faf9f5;
   --color-text-main: #222;
-  --main-font-size: 1.125em;
+  --main-font-size: 18px;
+  --font-main: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
