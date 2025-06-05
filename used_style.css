@@ -1,4 +1,9 @@
 /* 2025 */
+html {
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
 body{
    background: #faf9f5;
    margin: 0;
@@ -9,7 +14,7 @@ body{
 
 @media (min-resolution: 2dppx) and (max-width: 768px) {
   body {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
@@ -128,13 +133,11 @@ header h1, header h4 {
 
 /* Menu styling */
 .menu {
-  flex: 0 0 30ch; /* fixed width for menu */
-  max-width: 30ch;
+  flex: 0 0 var(--text-widht); /* fixed width for menu */
 }
 
 .site_logo{
-	width: 30ch;
-	max-width: 30ch;
+  flex: 0 0 var(--text-widht); /* fixed width for menu */
 }
 
 /* MENU */
@@ -184,7 +187,7 @@ footer {
 }
 
 nav.menu {
-  flex: 0 0 30ch; /* fixed width menu */
+  flex: 0 0 var(--text-widht); /* fixed width menu */
   background-color: var(--color-back-main);
   overflow-y: auto; /* scroll if content too tall */
 }
@@ -197,14 +200,13 @@ main.content {
 }
 
 /* Optional: responsive tweak for narrow screens */
-@media (max-width: 600px) {
+@media (max-width: 300px) {
   .wrapper {
     flex-direction: column;
   }
   
   nav.menu {
     flex: none;
-    width: 100%;
     order: 2;
   }
 
@@ -257,7 +259,7 @@ dl{
   text-align: left;
   border-bottom: 1px solid #ccc; /* light gray line; adjust color if needed */
   padding-bottom: 0.5rem;
-  padding-left: calc(31ch - var(--gap-size)); /* aligns with menu width */
+  padding-left: 21ch; /* aligns with menu width */
 }
 
 .breadcrumbs a{
@@ -342,4 +344,5 @@ hr {
   --color-text-main: #222;
   --main-font-size: 18px;
   --font-main: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --text-widht: 20ch;
 }
