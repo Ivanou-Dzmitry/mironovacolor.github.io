@@ -297,6 +297,17 @@ border-collapse: collapse;
 margin-bottom: var(--gap-size); 
 }
 
+.table-invisible{
+	border-collapse: collapse;
+	border: none;
+}
+
+/* You want to remove borders from both <td> and <tr>, but your selector is slightly off */
+.table-invisible td, /* <td> elements */
+.table-invisible tr { /* <tr> elements */
+  border: none;
+}
+
   tr, td {
     border: 1px solid black;
   }
