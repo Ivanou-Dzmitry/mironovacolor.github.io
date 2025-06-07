@@ -259,7 +259,7 @@ dl{
   text-align: left;
   border-bottom: 1px solid #ccc; /* light gray line; adjust color if needed */
   padding-bottom: 0.5rem;
-  padding-left: 21ch; /* aligns with menu width */
+  padding-left: 20ch; /* aligns with menu width */
 }
 
 .breadcrumbs a{
