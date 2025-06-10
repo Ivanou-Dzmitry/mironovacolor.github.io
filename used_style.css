@@ -218,16 +218,19 @@ main.content {
 
 dd{
 	margin-left: 0;
-  display: inline-block;
-  vertical-align: middle;
-  line-height: 1.5; /* or match height of sibling */
+
+}
+
+dd.aligned {
+  display: flex;
+  align-items: center; /* vertical alignment */
+  gap: 1em;            /* spacing between image and link */
+  line-height: 3rem;
 }
 
 dl{
 	color: var(--color-text-main);
-	margin-top: 0;
-    display: flex;
-  flex-direction: column;
+
 }
 
 .paragraph1 {
