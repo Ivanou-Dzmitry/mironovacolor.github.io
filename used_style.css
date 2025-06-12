@@ -267,7 +267,7 @@ dl{
   text-align: left;
   border-bottom: 1px solid #ccc; /* light gray line; adjust color if needed */
   padding-bottom: 0.5rem;
-  padding-left: 20ch; /* aligns with menu width */
+  padding-left: var(--text-widht); /* aligns with menu width */
 }
 
 .breadcrumbs a{
@@ -363,5 +363,5 @@ hr {
   --color-text-main: #222;
   --main-font-size: 18px;
   --font-main: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  --text-widht: 20ch;
+  --text-widht: 15em;
 }
