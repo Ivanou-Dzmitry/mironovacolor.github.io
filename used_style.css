@@ -235,6 +235,7 @@ dl{
 
 .paragraph1 {
   font-family: var(--font-main);
+  font-size: var(--main-font-size);
   line-height: 1.6;
   color: var(--color-text-main);
   margin-top: 0;
@@ -244,6 +245,7 @@ dl{
 
 .paragraph2 {
   font-family: var(--font-main);
+  font-size: var(--main-font-size);
   line-height: 1.6;
   color: var(--color-text-main);
   margin-top: 0.5rem;
@@ -253,6 +255,7 @@ dl{
 
 .paragraph3 {
   font-family: var(--font-main);
+  font-size: var(--main-font-size);
   line-height: 1.6;
   color: var(--color-text-main);
   margin-top: 0;
