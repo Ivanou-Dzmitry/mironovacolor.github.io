@@ -369,6 +369,10 @@ hr {
   border: none;
 }
 
+.gsc-input td{
+  border: none;
+}
+
 :root {
   --gap-size: 2em;
   --color-back-main: #faf9f5;
