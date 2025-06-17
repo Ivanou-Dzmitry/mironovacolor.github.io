@@ -56,6 +56,7 @@ a {
 
 a:hover {
   color: #cc0000; /* a soft red for hover */
+  text-decoration: underline;
 }
 
 a:visited {
@@ -111,7 +112,7 @@ a:visited {
   font-size: 0.875em;
   line-height: 1.4;
   color: #555;
-  max-width: 80ch; /* limits line length to ~60 characters */
+  max-width: 160ch; /* limits line length to ~60 characters */
   padding-right: var(--gap-size);
 }
 
@@ -363,9 +364,14 @@ hr {
   .search-box-wrapper {
     text-align: right;
     padding-left: var(--text-widht);
+    padding-top: -1rem;
   }
 
   .search-box-wrapper td {
+    border: none;
+  }
+
+    .search-box-wrapper tr {
     border: none;
   }
 
