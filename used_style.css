@@ -362,16 +362,13 @@ hr {
 
   .search-box-wrapper {
     text-align: right;
+    width: 50%;
   }
 
-  .gsc-control-cse {
-  background-color: var(--color-back-main);
-  border: none;
-}
+  .search-box-wrapper td {
+    border: none;
+  }
 
-.gsc-input td{
-  border: none;
-}
 
 :root {
   --gap-size: 2em;
