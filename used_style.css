@@ -362,7 +362,7 @@ hr {
 
   .search-box-wrapper {
     text-align: right;
-    width: 50%;
+    padding-left: var(--text-widht);
   }
 
   .search-box-wrapper td {
