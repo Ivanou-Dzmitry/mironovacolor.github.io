@@ -362,8 +362,12 @@ hr {
 
   .search-box-wrapper {
     text-align: right;
-    margin-top: 10px;
   }
+
+  .gsc-control-cse {
+  background-color: var(--color-back-main);
+  border: none;
+}
 
 :root {
   --gap-size: 2em;
