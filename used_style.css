@@ -360,6 +360,11 @@ hr {
   margin: 1em 0; /* Optional: adds vertical spacing */
 }
 
+  .search-box-wrapper {
+    text-align: right;
+    margin-top: 10px;
+  }
+
 :root {
   --gap-size: 2em;
   --color-back-main: #faf9f5;
